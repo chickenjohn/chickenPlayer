@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->vol_chk->setChecked(true);
+    ui->start_btn->setText(tr("Play"));
     mplayer_proc = new QProcess;
     pause_flag = false;
     load_flag = false;
@@ -43,11 +44,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    if(load_flag)
-    {
-        mplayer_proc->write("quit\n");
-        mplayer_proc->close();
-    }
+    mplayer_proc->close();
     delete ui;
 }
 
@@ -90,6 +87,7 @@ void MainWindow::play_video()
         load_flag = true;
         pause_flag = false;
         fresh_time->start(400);
+        ui->start_btn->setText(tr("Pause"));
     }
 }
 
@@ -110,7 +108,7 @@ void MainWindow::on_start_btn_clicked()
             ui->start_btn->setText(tr("Pause"));
         }
         pause_flag = !pause_flag;
-        mplayer_proc->write("p\n");
+        mplayer_proc->write("pause\n");
     }
     else if(!(file_loc.isNull()))
     {
@@ -118,15 +116,19 @@ void MainWindow::on_start_btn_clicked()
         mplayer_proc->start("mplayer",args);
         load_flag = true;
     }
+    else
+    {
+        ui->actionOpen_file->trigger();
+    }
 }
 
 void MainWindow::on_stop_btn_clicked()
 {
     mplayer_proc->write("stop\n");
     ui->start_btn->setText("Play");
+    ui->horizontalSlider->setValue(0);
     load_flag = false;
     fresh_time->stop();
-
 }
 
 void MainWindow::info_getting()
@@ -175,6 +177,16 @@ void MainWindow::timeup()
     }
 
     ui->horizontalSlider->setValue(time_percent.toInt(&ok,10));
+
+    if(mplayer_proc->state() == QProcess::NotRunning)
+    {
+        load_flag = false;
+        pause_flag = false;
+        loc_flag = false;
+        file_loc.clear();
+        args.clear();
+        ui->start_btn->setText(tr("Play"));
+    }
 }
 
 void MainWindow::on_horizontalSlider_sliderPressed()
@@ -196,8 +208,9 @@ void MainWindow::on_horizontalSlider_sliderReleased()
         mplayer_proc->write("seek ");
         mplayer_proc->write(c_value.toLatin1().data());
         mplayer_proc->write(" 1\n");
-        //QThread::msleep(800);
-        fresh_time->start(50);
+        fresh_time->start(400);
+        ui->start_btn->setText(tr("Pause"));
+        pause_flag = false;
     }
 }
 
