@@ -12,27 +12,27 @@ To get more information about Qt and MPlayer, please visit following websites:
 ##How to use it?
 Once you run the program, what you'll see might looks like the picture below:
 
-![](.\pics\index.png)
+![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/)
 
 ###Open a file
 Open a file from the menu bar:
 
-![](.\pics\openfile.png)
+![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/openfile.PNG)
 
 Then you may use it like using most media players.
 ###Adding a subtitle
 Use "Tools" selection to load a subtitle. The coding format of it must be GB2312. Add a subtitle like this:
 
-![](.\pics\sub.png)
+![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/sub.PNG)
 
 ###Show the terminal
 Since the MPlayer is working in the background, you may check what it is printing out by using a Terminal:
 
-![](.\pics\ter.png)
+![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/ter.PNG)
 
 Turing on the Terminal by:
 
-![](.\pics\ter_choose.png)
+![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/ter_choose.PNG)
 
 **NOTICE: YOU MAY RUN THE TERMINAL ONLY AFTER YOU LOAD A VIDEO**
 
@@ -49,7 +49,7 @@ Most of the dependence have been embraced in the local directory. You may check 
 
 However, there are some chances that you get this while running:
 
-![](.\pics\wrong.png)
+![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/wrong.PNG)
 
 If any part of the player is getting green, it means that MPlayer is not working under the OpenGL mode. You might check if OpenGL is installed on your PC. It mainly happens while you are running on Windows 7 or later version of Windows.
 
