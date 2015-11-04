@@ -12,7 +12,7 @@ To get more information about Qt and MPlayer, please visit following websites:
 ##How to use it?
 Once you run the program, what you'll see might looks like the picture below:
 
-![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/index)
+![](https://github.com/chickenjohn/chickenPlayer/blob/master/pics/index.png)
 
 ###Open a file
 Open a file from the menu bar:
