@@ -8,6 +8,7 @@ To get more information about Qt and MPlayer, please visit following websites:
 >Qt: [http://www.qt.io](http://www.qt.io "qt")
 
 >MPlayer: [http://http://www.mplayerhq.hu/design7/news.html](http://http://www.mplayerhq.hu/design7/news.html "mplayer")
+
 ##How to use it?
 Once you run the program, what you'll see might looks like the picture below:
 
