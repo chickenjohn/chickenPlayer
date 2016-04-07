@@ -1,5 +1,5 @@
 #Chicken Player v1.0
------------
+
 ##What is Chicken Player
 Chicken Player is a simple shell for MPlayer developed by Qt 5.5. This simple program can run under the Qt environment in Windows. By using MPlayer slave mood, a wide range of formats are supported well. 
 
@@ -54,7 +54,7 @@ However, there are some chances that you get this while running:
 If any part of the player is getting green, it means that MPlayer is not working under the OpenGL mode. You might check if OpenGL is installed on your PC. It mainly happens while you are running on Windows 7 or later version of Windows.
 
 ##More to say
-It might make no sense to develop such a rough, simple GUI shell for MPlayer, but I guess it is more like being a sample of Qt or Muitimedia application. Maybe this will help you if you are an entirely fresh man to Qt or programming. 
+It might make no sense to develop such a rough, simple GUI shell for MPlayer, but I guess it is more like being a sample of Qt or Muitimedia application. Maybe this will help you if you are an entire fresh man to Qt or programming. 
 
 ##Get more info
 To fetch more information about this little thing, you may contact me:
