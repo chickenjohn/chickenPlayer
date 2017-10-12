@@ -39,13 +39,10 @@ Turing on the Terminal by:
 ## Dependence
 Most of the dependence have been embraced in the local directory. You may check this. The program is mainly depends on:
 
->Qt 5.5 for Windows
-
->MinGW
-
->OpenGL
-
->MPlayer 
+> Qt 5.5 for Windows
+> MinGW
+> OpenGL
+> MPlayer 
 
 However, there are some chances that you get this while running:
 
@@ -59,4 +56,4 @@ It might make no sense to develop such a rough, simple GUI shell for MPlayer, bu
 ## Get more info
 To fetch more information about this little thing, you may contact me:
 
->Email: chickenjohn93@hust.edu.cn
+>Email: chickenjohn93@outlook.com
