@@ -6,7 +6,7 @@ Chicken Player is a simple shell for MPlayer developed by Qt 5.5. This simple pr
 To get more information about Qt and MPlayer, please visit following websites:
 
 >Qt: [http://www.qt.io](http://www.qt.io "qt")
-
+> 
 >MPlayer: [http://www.mplayerhq.hu/design7/news.html](http://www.mplayerhq.hu/design7/news.html "mplayer")
 
 ## How to use it?
@@ -52,8 +52,3 @@ If any part of the player is getting green, it means that MPlayer is not working
 
 ## More to say
 It might make no sense to develop such a rough, simple GUI shell for MPlayer, but I guess it is more like being a sample of Qt or Muitimedia application. Maybe this will help you if you are an entire fresh man to Qt or programming. 
-
-## Get more info
-To fetch more information about this little thing, you may contact me:
-
->Email: chickenjohn93@outlook.com
